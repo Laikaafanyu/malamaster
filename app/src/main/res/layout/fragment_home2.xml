@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Activity.HomeFragment">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="605dp"
+    tools:context=" .MainActivity">
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="content that can be scrolled" -->
+<!--            />-->
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -70,7 +86,8 @@
                 android:background="#dcdcdc"
                 android:hint="Search"
                 app:backgroundTint="#dcdcdc"
-                app:menu="@menu/profile_menu" />
+                app:menu="@menu/profile_menu"
+                />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -306,7 +323,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="17dp"
             android:background="@color/material_on_surface_stroke"
-            android:text="Milk"
+            android:text="@string/milk"
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/milk_button_energy"
             app:layout_constraintStart_toStartOf="parent"
@@ -339,5 +356,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView1" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
 </FrameLayout>
